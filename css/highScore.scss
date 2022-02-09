@@ -1,0 +1,61 @@
+@import 'helpers';
+body{
+  background-color: $main-bg-color;
+}
+.highScore-container{
+  @include container;
+  justify-content: start;
+  padding-top: 100px;
+  h1{
+    @include heading;
+  }
+  ul{
+    width: 45%;
+    margin-top: 30px;
+    @media screen and (max-width: 912px) {
+      width: 85%;
+    }
+    li{
+      padding: 10px 15px;
+      font-size: 23px;
+      border: 1px solid $main-color-alt;
+      color: $main-color-alt;
+      background-color: white;
+      text-align: start;
+      position: relative;
+      @media screen and (max-width: 414px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 280px) {
+        padding: 8px 15px;
+        font-size: 14px;
+      }
+      &:not(:first-child){
+        margin-top: 10px;
+      }
+      span{
+        position: absolute;
+        background-color: $main-color;
+        color: white;
+        right: 0;
+        top: 0;
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 412px) {
+          width: 25%;
+        }
+      }
+    }
+  }
+  a{
+    @include btns;
+    margin-top: 30px;
+  }
+  button{
+    @include btns;
+    margin-top: 10px;
+  }
+}

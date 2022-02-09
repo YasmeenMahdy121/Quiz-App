@@ -1,0 +1,60 @@
+/*start global rules*/
+* {
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*end global rules*/
+
+/*colors variable*/
+$main-color:#56a5eb;
+$main-color-alt:#56a5eb;
+$main-bg-color:#ecf5ff;
+/*end colors variable*/
+/*mixins*/
+@mixin container {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin heading {
+  font-size: 55px;
+  color: $main-color;
+  font-weight: bold;
+  @media screen and (max-width: 393px) {
+    font-size: 45px;
+  }
+  @media screen and (max-width: 280px) {
+    font-size: 35px;
+  }
+}
+@mixin btns {
+  width: 200px;
+  padding: 10px 0;
+  margin-top: 10px;
+  font-size: 23px;
+  border: 1px solid $main-color-alt;
+  color: $main-color-alt;
+  background-color: white;
+  cursor: pointer;
+  transition: .3s;
+  @media screen and (max-width: 393px) {
+    width: 150px;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+  &:hover{
+    box-shadow: 2px 3px 11px 0 #56a5eb;
+  }
+}
+/*end mixins*/
+*::selection{
+  background-color: $main-color;
+  color: #ecf5ff;
+}

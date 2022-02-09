@@ -1,0 +1,224 @@
+/*start global rules*/
+* {
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*end global rules*/
+/*colors variable*/
+/*end colors variable*/
+/*mixins*/
+/*end mixins*/
+*::-moz-selection {
+  background-color: #56a5eb;
+  color: #ecf5ff;
+}
+*::selection {
+  background-color: #56a5eb;
+  color: #ecf5ff;
+}
+
+body {
+  background-color: #ecf5ff;
+}
+
+.loader-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-container .loader {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 18px solid white;
+  border-top-color: #56a5eb;
+  -webkit-animation: loading 2s infinite linear;
+          animation: loading 2s infinite linear;
+}
+@-webkit-keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.game-container {
+  width: 55%;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: none;
+}
+@media screen and (max-width: 912px) {
+  .game-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .game-container {
+    width: 90%;
+  }
+}
+.game-container .game-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 20px;
+  color: #333;
+}
+.game-container .game-info .progress-container {
+  text-align: center;
+  width: 25%;
+}
+@media screen and (max-width: 912px) {
+  .game-container .game-info .progress-container {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .game-container .game-info .progress-container {
+    width: 100%;
+  }
+}
+.game-container .game-info .progress-container .progress {
+  background-color: white;
+  height: 40px;
+  border: 3px solid #56a5eb;
+  margin-top: 15px;
+}
+.game-container .game-info .progress-container .progress .progress-bar {
+  height: 100%;
+  width: 10%;
+  background-color: #56a5eb;
+  transition: 0.3s;
+}
+.game-container .game-info .score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .game-container .game-info .score {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.game-container .game-info .score .score-val {
+  font-size: 55px;
+  font-weight: bold;
+  color: #56a5eb;
+}
+.game-container .question {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 40px 0 30px;
+  color: #333;
+}
+@media screen and (max-width: 912px) {
+  .game-container .question {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .game-container .question {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .game-container .question {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .game-container .question {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .game-container .question {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .game-container .question {
+    font-size: 18px;
+  }
+}
+.game-container .answers {
+  display: flex;
+  flex-direction: column;
+}
+.game-container .answers li {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  border: 1px solid rgba(86, 165, 235, 0.25);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.game-container .answers li span {
+  width: 8%;
+  background-color: #56a5eb;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 820px) {
+  .game-container .answers li span {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .game-container .answers li span {
+    width: 15%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .game-container .answers li span {
+    font-size: 12px;
+  }
+}
+.game-container .answers li p {
+  width: 92%;
+  background-color: white;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+@media screen and (max-width: 820px) {
+  .game-container .answers li p {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .game-container .answers li p {
+    width: 85%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .game-container .answers li p {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+.game-container .answers li:hover {
+  box-shadow: 4px 6px 11px -5px #56a5eb;
+}/*# sourceMappingURL=game.css.map */

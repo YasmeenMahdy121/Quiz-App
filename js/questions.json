@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "choice1": "<script>",
+    "choice2": "<javascript>",
+    "choice3": "<js>",
+    "choice4": "<scripting>",
+    "answer": 1
+  },
+  {
+    "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+    "choice1": "<script href='xxx.js'>",
+    "choice2": "<script name='xxx.js'>",
+    "choice3": "<script src='xxx.js'>",
+    "choice4": "<script file='xxx.js'>",
+    "answer": 3
+  },
+  {
+    "question": " How do you write 'Hello World' in an alert box?",
+    "choice1": "msgBox('Hello World');",
+    "choice2": "alertBox('Hello World');",
+    "choice3": "msg('Hello World');",
+    "choice4": "alert('Hello World');",
+    "answer": 4
+  },
+  {
+    "question": "In HTML Can We Use This Way To Add Attributes",
+    "choice1": "<div class='class-name'>",
+    "choice2": "<div class=class-name>",
+    "choice3": "<div class=\"class-name\">",
+    "choice4": "All Is Right",
+    "answer": 4
+  },
+  {
+    "question": "Is <img> Element Has Attribute href",
+    "choice1": "Yes",
+    "choice2": "No Its For Anchor Tag <a>",
+    "choice3": "All Elements Has This Attribute",
+    "choice4": "Answer 1 And 3 Is Right",
+    "answer": 2
+  },
+  {
+    "question": "How Can We Make Element Text Bold",
+    "choice1": "Putting It Inside <b> Tag",
+    "choice2": "Putting It Inside <strong> Tag",
+    "choice3": "Customizing It With Font-Weight Property In CSS",
+    "choice4": "All Answers Is Right",
+    "answer": 4
+  },
+  {
+    "question": "What Is The Right Hierarchy For Creating Part Of Page",
+    "choice1": "<h2> Then <p> Then <h1> Then <p> Then <h3> Then <p> Then <img>",
+    "choice2": "<h1> Then <p> Then <h3> Then <p> Then <h2> Then <p> Then <img>",
+    "choice3": "<h2> Then <p> Then <h3> Then <p> Then <h1> Then <p> Then <img>",
+    "choice4": "All Solutions Is Wrong",
+    "answer": 4
+  },
+  {
+    "question": "How Can We Include External Page Inside Our HTML Page",
+    "choice1": "By Using Include in HTML",
+    "choice2": "By Using Load In HTML",
+    "choice3": "By Using iFrame Tag",
+    "choice4": "All Solutions Is Wrong",
+    "answer": 3
+  },
+  {
+    "question": "What Is The Tag That Not Exists in HTML",
+    "choice1": "<object>",
+    "choice2": "<basefont>",
+    "choice3": "<abbr>",
+    "choice4": "All Tags Is Exists in HTML",
+    "answer": 4
+  },
+  {
+    "question": "How We Specify Document Type Of HTML5 Page",
+    "choice1": "<DOCTYPE html>",
+    "choice2": "<DOCTYPE html5>",
+    "choice3": "<!DOCTYPE html5>",
+    "choice4": "<!DOCTYPE html>",
+    "answer": 4
+  }
+]

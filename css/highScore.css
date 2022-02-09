@@ -1,0 +1,146 @@
+/*start global rules*/
+* {
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*end global rules*/
+/*colors variable*/
+/*end colors variable*/
+/*mixins*/
+/*end mixins*/
+*::-moz-selection {
+  background-color: #56a5eb;
+  color: #ecf5ff;
+}
+*::selection {
+  background-color: #56a5eb;
+  color: #ecf5ff;
+}
+
+body {
+  background-color: #ecf5ff;
+}
+
+.highScore-container {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  padding-top: 100px;
+}
+.highScore-container h1 {
+  font-size: 55px;
+  color: #56a5eb;
+  font-weight: bold;
+}
+@media screen and (max-width: 393px) {
+  .highScore-container h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .highScore-container h1 {
+    font-size: 35px;
+  }
+}
+.highScore-container ul {
+  width: 45%;
+  margin-top: 30px;
+}
+@media screen and (max-width: 912px) {
+  .highScore-container ul {
+    width: 85%;
+  }
+}
+.highScore-container ul li {
+  padding: 10px 15px;
+  font-size: 23px;
+  border: 1px solid #56a5eb;
+  color: #56a5eb;
+  background-color: white;
+  text-align: start;
+  position: relative;
+}
+@media screen and (max-width: 414px) {
+  .highScore-container ul li {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .highScore-container ul li {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+.highScore-container ul li:not(:first-child) {
+  margin-top: 10px;
+}
+.highScore-container ul li span {
+  position: absolute;
+  background-color: #56a5eb;
+  color: white;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 412px) {
+  .highScore-container ul li span {
+    width: 25%;
+  }
+}
+.highScore-container a {
+  width: 200px;
+  padding: 10px 0;
+  margin-top: 10px;
+  font-size: 23px;
+  border: 1px solid #56a5eb;
+  color: #56a5eb;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+@media screen and (max-width: 393px) {
+  .highScore-container a {
+    width: 150px;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+}
+.highScore-container a:hover {
+  box-shadow: 2px 3px 11px 0 #56a5eb;
+}
+.highScore-container button {
+  width: 200px;
+  padding: 10px 0;
+  margin-top: 10px;
+  font-size: 23px;
+  border: 1px solid #56a5eb;
+  color: #56a5eb;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+@media screen and (max-width: 393px) {
+  .highScore-container button {
+    width: 150px;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+}
+.highScore-container button:hover {
+  box-shadow: 2px 3px 11px 0 #56a5eb;
+}/*# sourceMappingURL=highScore.css.map */

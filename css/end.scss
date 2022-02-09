@@ -1,0 +1,43 @@
+@import 'helpers';
+body{
+  background-color: $main-bg-color;
+}
+.end-container{
+  @include container;
+  strong{
+    @include heading;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    input{
+      width: 200px;
+      padding: 15px 10px;
+      margin-top: 30px;
+      font-size: 20px;
+      border: none;
+      color: $main-color-alt;
+      background-color: white;
+      box-shadow: 0 0.1rem 1.4rem 0 rgb(86 185 235 / 50%);
+      @media screen and (max-width: 393px) {
+        width: 150px;
+        padding: 10px;
+      }
+      &:focus{
+        outline: none;
+      }
+      &::placeholder{
+        color: rgb(161, 161, 161);
+      }
+    }
+    button{
+      @include btns;
+      &.disabled{
+        cursor: no-drop;
+      }
+    }
+  }
+  a{
+    @include btns;
+  }
+}

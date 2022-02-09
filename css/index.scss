@@ -1,0 +1,16 @@
+@import 'helpers';
+body{
+  background-color: $main-bg-color;
+}
+.home-container{
+  @include container;
+  h1{
+    @include heading;
+  }
+  a{
+    @include btns;
+    &:nth-child(2){
+      margin-top: 30px;
+    }
+  }
+}
